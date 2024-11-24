@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 // Clone the Git repository (uses configured credentials if needed)
-                git branch: 'main', url: 'git@github.com:pandeynikhil8/helm.git'
+               ls -lrt
             }
         }
         stage('Build') {
