@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 // Clone the Git repository (uses configured credentials if needed)
-               ls -lrt
+               sh ls -lrt
             }
         }
         stage('Build') {
